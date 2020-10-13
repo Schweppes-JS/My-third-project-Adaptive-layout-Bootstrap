@@ -1,6 +1,6 @@
 ## Demo 
 
-![print](demo/demo.png)
+![Farmers Market Finder - Animated gif demo](demo/demo.gif)
 
 ## Live page
 
