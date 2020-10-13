@@ -7,10 +7,12 @@
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="icon" type="image/png" href="https://img.icons8.com/color/48/000000/bootstrap.png">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
 	<script src="js/jQuery.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/script.js"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="./js/script.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBfaYgjAlX0fL9OVZNVu5knr0nMssVFEGw&callback=initMap" async defer></script>
 </head>
 <body>
 	<div class="container">
@@ -180,7 +182,7 @@
 				<div class="card mt-4">
 				  <div class="card-header bg-info text-white">OUR OFFICES</div>
 				  <div class="card-body py-2 px-2 bg-light">
-				  	<img src="img/map.png" class="card-img-top" alt="Our offices">
+					<div id="map" class="card-img-top"></div>
 				  </div>
 				</div>
 			</aside>
@@ -190,21 +192,21 @@
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt enim iste, ex excepturi atque et quidem consequuntur quod cum quaerat quae eveniet velit! Iste dolorum, autem omnis veritatis aspernatur praesentium. Labore sed distinctio aut pariatur ratione, dolore et expedita vel! Est architecto, ad, eligendi deserunt dignissimos, maxime at assumenda rem iste rerum fuga enim voluptates. Provident excepturi ex nesciunt, neque itaque vero aspernatur delectus dolorem illo, quod voluptate veniam architecto praesentium est magni error! Fugit amet et autem labore similique nemo itaque, facere dolorem iste earum sit, deleniti eius velit ratione? Nihil aut distinctio accusantium quaerat officiis odit eius dolor.</p>
 				<div class="row">
 					<div class="col-6">
-						<img src="img/screenshot.png" alt="" class="img-thumbnail">
+						<div class="img-thumbnail screenshot"></div>
 						<p class="text-uppercase text-center text-secondary font-weight-light">screenshot 1</p>
 					</div>
 					<div class="col-6">
-						<img src="img/screenshot.png" alt="" class="img-thumbnail float-right">
+						<div class="img-thumbnail screenshot"></div>
 						<p class="text-uppercase text-center text-secondary font-weight-light">screenshot 2</p>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-6">
-						<img src="img/screenshot.png" alt="" class="img-thumbnail">
+						<div class="img-thumbnail screenshot"></div>
 						<p class="text-uppercase text-center text-secondary font-weight-light">screenshot 3</p>
 					</div>
 					<div class="col-6">
-						<img src="img/screenshot.png" alt="" class="img-thumbnail float-right">
+						<div class="img-thumbnail screenshot"></div>
 						<p class="text-uppercase text-center text-secondary font-weight-light">screenshot 4</p>
 					</div>
 				</div>
@@ -214,19 +216,19 @@
 				<h2 class="text-uppercase bg-info rounded text-white pl-1">Related Projects</h2>
 				<div class="row mt-3 text-secondary text-center">
 					<div class="col-3" style="width: 18rem;">
-					  <img src="img/screenshot.png" class="img-thumbnail" alt="...">
+					  <div class="img-thumbnail project"></div>
 				    <h5 class="card-title font-weight-light">Raleted project</h5>
 					</div>
 					<div class="col-3" style="width: 18rem;">
-					  <img src="img/screenshot.png" class="img-thumbnail" alt="...">
+						<div class="img-thumbnail project"></div>
 					   <h5 class="card-title font-weight-light">Raleted project</h5>
 					</div>
 					<div class="col-3" style="width: 18rem;">
-					  <img src="img/screenshot.png" class="img-thumbnail" alt="...">
+						<div class="img-thumbnail project"></div>
 					  <h5 class="card-title font-weight-light">Raleted project</h5>
 					</div>
 					<div class="col-3" style="width: 18rem;">
-					  <img src="img/screenshot.png" class="img-thumbnail" alt="...">
+						<div class="img-thumbnail project"></div>
 					  <h5 class="card-title font-weight-light">Raleted project</h5>
 					</div>
 				</div>
@@ -258,29 +260,29 @@
 				</div>
 				<div class="col-md-3 social text-light">
 					<h3 class="text-white">Social networks</h3>
-					<a href="http://twitter.com/" class="d-inline-block mr-2 my-2">
-						<img src="img/Twitter.png" alt="">
+					<a href="http://twitter.com/" class="text-light d-inline-block mr-2 my-2">
+						<i class="fab fa-twitter-square"></i>
 					</a>
-					<a href="http://facebook.com/" class="d-inline-block mr-2 my-2">
-						<img src="img/Facebook.png" alt="">
+					<a href="http://facebook.com/" class="text-light d-inline-block mr-2 my-2">
+						<i class="fab fa-facebook-square"></i>
 					</a>
-					<a href="http://plus.google.com/" class="d-inline-block mr-2 my-2">
-						<img src="img/Google+.png" alt="">
+					<a href="http://plus.google.com/" class="text-light d-inline-block mr-2 my-2">
+						<i class="fab fa-google-plus-g"></i>
 					</a><br>
-					<a href="http://vimeo.com/" class="d-inline-block mr-2 my-1">
-						<img src="img/Vimeo.png" alt="">
+					<a href="http://vimeo.com/" class="text-light d-inline-block mr-2 my-1">
+						<i class="fab fa-vimeo"></i>
 					</a>
-					<a href="http://youtube.com/" class="d-inline-block mr-2 my-1">
-						<img src="img/Youtube.png" alt="">
+					<a href="http://youtube.com/" class="text-light d-inline-block mr-2 my-1">
+						<i class="fab fa-youtube-square"></i>
 					</a>
-					<a href="http://flickr.com/" class="d-inline-block mr-2 my-1">
-						<img src="img/Flickr.png" alt="">
+					<a href="http://flickr.com/" class="text-light d-inline-block mr-2 my-1">
+						<i class="fab fa-flickr"></i>
 					</a>
-					<a href="http://instagram.com/" class="d-inline-block mr-2 my-1">
-						<img src="img/Instagram.png" alt="">
+					<a href="http://instagram.com/" class="text-light d-inline-block mr-2 my-1">
+						<i class="fab fa-instagram"></i>
 					</a>
-					<a href="/rss/" class="d-inline-block mr-2 my-1">
-						<img src="img/RSS.png" alt="">
+					<a href="https://rss.com/" class="text-light d-inline-block mr-2 my-1">
+						<i class="fas fa-rss-square"></i>
 					</a>
 				</div>
 				<div class="col-md-3 footer-logo text-light">
